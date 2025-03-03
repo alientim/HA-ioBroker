@@ -28,5 +28,5 @@
     "IOBROKER_PORT": 8081,
     "MQTT_PORT": 1883
   },
-  "initial_config": "{\"ConnectionManager_connections\":{\"f69723c3-4fcd-4bd9-a63d-c81864946931\":{\"configVersion\":1,\"clientId\":\"iobroker-52dfac40\",\"id\":\"f69723c3-4fcd-4bd9-a63d-c81864946931\",\"name\":\"homeassistant\",\"encryption\":false,\"type\":\"http\",\"host\":\"core-iobroker.local.hass.io\",\"port\":8081}}}"
+  "initial_config": "{\"ConnectionManager_connections\":{\"f69723c3-4fcd-4bd9-a63d-c81864946932\":{\"configVersion\":1,\"clientId\":\"iobroker-52dfac41\",\"id\":\"f69723c3-4fcd-4bd9-a63d-c81864946932\",\"name\":\"homeassistant\",\"encryption\":false,\"type\":\"http\",\"host\":\"core-iobroker.local.hass.io\",\"port\":8081}, \"alternative_host\":{\"configVersion\":1,\"clientId\":\"iobroker-backup\",\"id\":\"backup-connection\",\"name\":\"homeassistant-backup\",\"encryption\":false,\"type\":\"http\",\"host\":\"192.168.80.10\",\"port\":8081}}}"
 }
