@@ -1,6 +1,6 @@
 {
   "name": "ioBroker",
-  "version": "latest",
+  "version": "v10.0.0",
   "slug": "iobroker",
   "description": "ioBroker als Home Assistant Add-on",
   "arch": ["armhf", "armv7", "amd64", "aarch64"],
@@ -10,7 +10,7 @@
   "ingress_port": 8081,
   "panel_icon": "mdi:home-automation",
   "panel_admin": true,
-  "image": "buanet/iobroker:latest",
+  "image": "buanet/iobroker",
   "map": ["config", "share", "ssl", "addons"],
   "environment": {
     "IOBROKER_HOST": "core-iobroker.local.hass.io",
@@ -18,7 +18,7 @@
   },
   "ports": {
     "8081/tcp": 8081,
-    "1883/tcp": 1883  // Port 1883 für MQTT, aber anpassbar über Optionen
+    "1883/tcp": 1883
   },
   "ports_description": {
     "8081/tcp": "ioBroker Admin UI",
@@ -30,7 +30,7 @@
   },
   "options": {
     "IOBROKER_PORT": 8081,
-    "MQTT_PORT": 1883  // Standardwert für den MQTT-Port
+    "MQTT_PORT": 1883
   },
   "initial_config": "{\"ConnectionManager_connections\":{\"f69723c3-4fcd-4bd9-a63d-c81864946931\":{\"configVersion\":1,\"clientId\":\"iobroker-52dfac40\",\"id\":\"f69723c3-4fcd-4bd9-a63d-c81864946931\",\"name\":\"homeassistant\",\"encryption\":false,\"type\":\"http\",\"host\":\"core-iobroker.local.hass.io\",\"port\":8081}}}"
 }
