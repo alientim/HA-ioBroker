@@ -3,6 +3,7 @@
   "version": "v10.0.0",
   "slug": "iobroker",
   "description": "ioBroker als Home Assistant Add-on",
+  "url": "https://github.com/alientim/HA-ioBroker/addons"
   "arch": ["armhf", "armv7", "amd64", "aarch64"],
   "startup": "application",
   "boot": "auto",
