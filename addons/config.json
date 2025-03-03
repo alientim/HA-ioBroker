@@ -12,7 +12,7 @@
   "panel_admin": true,
   "image": "buanet/iobroker:v10.0.0",
   "map": [
-    "addons_config/iobroker:/opt/iobroker"
+    "addons_config"
   ],
   "ports": {
     "8081/tcp": 8081,
