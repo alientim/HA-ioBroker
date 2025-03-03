@@ -4,7 +4,7 @@
   "slug": "iobroker",
   "description": "ioBroker als Home Assistant Add-on",
   "arch": ["armhf", "armv7", "amd64", "aarch64"],
-  "startup": "services",
+  "startup": "application",
   "boot": "auto",
   "ingress": true,
   "ingress_port": 8081,
