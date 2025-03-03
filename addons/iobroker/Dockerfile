@@ -1,16 +1,10 @@
-FROM node:14
-
-# Installiere ioBroker
-RUN npm install -g iobroker --unsafe-perm
-
-# Kopiere Konfigurationsdateien und setze das Arbeitsverzeichnis
-COPY . /opt/iobroker
-
-# Setze das Arbeitsverzeichnis
-WORKDIR /opt/iobroker
+FROM buanet/iobroker:v10.0.0
 
 # Exponiere Ports
 EXPOSE 8081
+EXPOSE 1883
 
-# Starte ioBroker
+# Definiere das Arbeitsverzeichnis
+WORKDIR /opt/iobroker
+
 CMD ["iobroker", "start"]
