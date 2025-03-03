@@ -25,9 +25,7 @@ ports_description:
   "8081/tcp": "ioBroker Admin UI"
   "1883/tcp": "MQTT Broker Port (optional)"
 schema:
-  IOBROKER_PORT: int
-  MQTT_PORT: int
-options:
   IOBROKER_PORT: 8081
   MQTT_PORT: 1883
+options:
   initial_config: "{\"ConnectionManager_connections\":{\"f69723c3-4fcd-4bd9-a63d-c81864946932\":{\"configVersion\":1,\"clientId\":\"iobroker-52dfac41\",\"id\":\"f69723c3-4fcd-4bd9-a63d-c81864946932\",\"name\":\"homeassistant\",\"encryption\":false,\"type\":\"http\",\"host\":\"core-iobroker.local.hass.io\",\"port\":8081}}}"
