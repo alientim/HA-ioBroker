@@ -10,4 +10,4 @@ docker run -d \
   -p ${MQTT_PORT}:1883 \
   --name iobroker \
   --restart unless-stopped \
-  buanet/iobroker:latest
+  buanet/iobroker:v10.0.0
