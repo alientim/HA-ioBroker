@@ -1,0 +1,11 @@
+addons:
+  - slug: iobroker
+    name: "ioBroker"
+    description: "ioBroker als Home Assistant Add-on"
+    url: "https://github.com/alientim/HA-ioBroker"
+    arch:
+      - armhf
+      - armv7
+      - amd64
+      - aarch64
+    version: "v10.0.0"
