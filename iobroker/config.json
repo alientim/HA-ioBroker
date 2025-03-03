@@ -1,6 +1,6 @@
 {
   "name": "ioBroker",
-  "version": "latest",  // Diese Zeile bleibt zur Referenz, beeinflusst aber nicht den Docker-Tag.
+  "version": "latest",
   "slug": "iobroker",
   "description": "ioBroker als Home Assistant Add-on",
   "arch": ["armhf", "armv7", "amd64", "aarch64"],
@@ -10,23 +10,27 @@
   "ingress_port": 8081,
   "panel_icon": "mdi:home-automation",
   "panel_admin": true,
-  "image": "buanet/iobroker:latest",  // Hier den Tag auf "latest" setzen
+  "image": "buanet/iobroker:latest",
   "map": ["config", "share", "ssl", "addons"],
   "environment": {
     "IOBROKER_HOST": "core-iobroker.local.hass.io",
     "IOBROKER_PORT": "8081"
   },
   "ports": {
-    "8081/tcp": 8081
+    "8081/tcp": 8081,
+    "1883/tcp": 1883  // Port 1883 für MQTT, aber anpassbar über Optionen
   },
   "ports_description": {
-    "8081/tcp": "ioBroker Admin UI"
+    "8081/tcp": "ioBroker Admin UI",
+    "1883/tcp": "MQTT Broker Port (anpassbar)"
   },
   "schema": {
-    "IOBROKER_PORT": "int"
+    "IOBROKER_PORT": "int",
+    "MQTT_PORT": "int"
   },
   "options": {
-    "IOBROKER_PORT": 8081
+    "IOBROKER_PORT": 8081,
+    "MQTT_PORT": 1883  // Standardwert für den MQTT-Port
   },
-  "INITIAL_CONFIG": "{\"ConnectionManager_connections\":{\"f69723c3-4fcd-4bd9-a63d-c81864946931\":{\"configVersion\":1,\"clientId\":\"iobroker-52dfac40\",\"id\":\"f69723c3-4fcd-4bd9-a63d-c81864946931\",\"name\":\"homeassistant\",\"encryption\":false,\"type\":\"http\",\"host\":\"core-iobroker.local.hass.io\",\"port\":8081}}}"
+  "initial_config": "{\"ConnectionManager_connections\":{\"f69723c3-4fcd-4bd9-a63d-c81864946931\":{\"configVersion\":1,\"clientId\":\"iobroker-52dfac40\",\"id\":\"f69723c3-4fcd-4bd9-a63d-c81864946931\",\"name\":\"homeassistant\",\"encryption\":false,\"type\":\"http\",\"host\":\"core-iobroker.local.hass.io\",\"port\":8081}}}"
 }
