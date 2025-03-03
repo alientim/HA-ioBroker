@@ -1,6 +1,6 @@
 {
   "name": "ioBroker",
-  "version": "latest",
+  "version": "v10.0.0",
   "slug": "iobroker",
   "description": "ioBroker als Home Assistant Add-on",
   "arch": ["armhf", "armv7", "amd64", "aarch64"],
@@ -10,7 +10,7 @@
   "ingress_port": 8081,
   "panel_icon": "mdi:home-automation",
   "panel_admin": true,
-  "image": "buanet/iobroker:latest",
+  "image": "buanet/iobroker:v10.0.0",
   "map": ["config", "ssl", "share", "addons", "backup"]
   "ports": {
     "8081/tcp": 8081,
