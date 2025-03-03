@@ -1,4 +1,4 @@
----
-name: Addons by alientim
-url: https://github.com/alientim/HA-ioBroker
-maintainer: Tim Eertmoed
+name: "HA-ioBroker Repository"
+url: "https://github.com/alientim/HA-ioBroker"
+maintainer: "Dein Name"
+description: "Repository für das ioBroker AddOn in Home Assistant"
