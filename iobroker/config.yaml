@@ -1,18 +1,18 @@
-name: ioBroker
+name: "ioBroker"
 version: "1.0"
-slug: iobroker
-description: "ioBroker Docker Container als Home Assistant Add-on"
+slug: "iobroker"
+description: "ioBroker als Home Assistant Add-on"
+url: "https://github.com/alientim/HA-ioBroker"
 arch:
   - amd64
+  - aarch64
   - armhf
   - armv7
-  - aarch64
-startup: application
-boot: auto
+startup: "system"
+boot: "auto"
 host_docker: true
-privileged: true
-host_network: false
+init: false
+ports:
+  8081/tcp: 8081
 options: {}
 schema: {}
-ports:
-  "8081/tcp": 8081
