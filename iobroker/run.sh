@@ -11,4 +11,4 @@ mkdir -p /addon_configs/iobroker
   -v /addon_configs/iobroker:/opt/iobroker \
   -p $PORT_ADMIN:8081 \
   -p $PORT_MQTT:1883 \
-  buanet/iobroker
+  buanet/iobroker:v10.0.0
