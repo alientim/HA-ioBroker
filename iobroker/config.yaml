@@ -20,7 +20,7 @@ map:
   - addon_configs:rw
 ports:
   8081/tcp: 8081
-  mqtt_port/tcp: null
+  mqtt_port/tcp: 
 ports_description:
   8081/tcp: "Web-UI von ioBroker"
   mqtt_port/tcp: "Optionaler MQTT-Port"
