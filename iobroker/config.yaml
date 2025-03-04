@@ -1,5 +1,5 @@
 name: "ioBroker"
-version: "1.0.0"
+version: "v10.0.0"
 slug: "iobroker"
 description: "ioBroker in einem Home Assistant Add-on"
 url: "https://github.com/buanet/ioBroker"
