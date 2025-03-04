@@ -1,10 +1,10 @@
 {
-  "name": "ioBroker",
+  "name": "AT-ioBroker",
   "version": "v10.0.0",
-  "slug": "d01c400f_ioBroker",
+  "slug": "custom_ioBroker",
   "description": "ioBroker AddOn for Home Assistant",
-  "arch": ["amd64", "armv7", "aarch64"],
-  "startup": "services",
+  "arch": ["amd64"],
+  "startup": "application",
   "boot": "auto",
   "options": {
     "port_admin": 8081,
