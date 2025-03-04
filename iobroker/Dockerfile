@@ -4,7 +4,7 @@ FROM buanet/iobroker:v10.0.0
 WORKDIR /opt/iobroker
 
 # Stelle sicher, dass die Konfigurationsdaten erhalten bleiben
-VOLUME ["/opt/iobroker"]
+VOLUME ["/addons_config/iobroker"]
 
 # Setze Standardports für ioBroker und einen optionalen MQTT-Port
 EXPOSE 8081
