@@ -18,6 +18,6 @@
     "8081/tcp": 8081,
     "1883/tcp": 1883
   },
-  "map": ["config", "ssl", "share", "addons"],
+  "map": ["config", "ssl", "share", "addons", "addon_configs"],
   "host_network": false
 }
