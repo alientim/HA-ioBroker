@@ -17,7 +17,7 @@ options:
 schema:
   mqtt_port: int
 map:
-  - config
+  - addons_config:rw
 ports:
   8081/tcp: 8081
   mqtt_port/tcp: null
