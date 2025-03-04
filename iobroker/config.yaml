@@ -1,8 +1,8 @@
-name: "ioBroker"
+name: "ioBroker for HA"
 version: "v10.0.0"
-slug: "iobroker"
+slug: "ha-iobroker"
 description: "ioBroker in einem Home Assistant Add-on"
-url: "https://github.com/buanet/ioBroker"
+url: "https://github.com/alientim/HA-ioBroker"
 arch:
   - amd64
   - armv7
