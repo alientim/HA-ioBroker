@@ -1,0 +1,27 @@
+name: "ioBroker"
+version: "1.0.0"
+slug: "iobroker"
+description: "ioBroker in einem Home Assistant Add-on"
+url: "https://github.com/buanet/ioBroker"
+arch:
+  - amd64
+  - armv7
+  - aarch64
+startup: "services"
+boot: "auto"
+hassio_api: true
+hassio_role: "admin"
+host_network: false
+options:
+  mqtt_port: 1883
+schema:
+  mqtt_port: int
+map:
+  - config
+ports:
+  8081/tcp: 8081
+  mqtt_port/tcp: null
+ports_description:
+  8081/tcp: "Web-UI von ioBroker"
+  mqtt_port/tcp: "Optionaler MQTT-Port"
+image: "local/iobroker-addon"
