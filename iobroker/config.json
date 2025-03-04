@@ -1,7 +1,7 @@
 {
   "name": "ioBroker",
   "version": "v10.0.0",
-  "slug": "ioBroker",
+  "slug": "d01c400f_ioBroker",
   "description": "ioBroker AddOn for Home Assistant",
   "arch": ["amd64", "armv7", "aarch64"],
   "startup": "services",
