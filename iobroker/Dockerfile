@@ -1,4 +1,4 @@
-FROM buanet/iobroker:latest
+FROM buanet/iobroker:v10.0.0
 
 # Kopiere das Startskript
 COPY run.sh /run.sh
