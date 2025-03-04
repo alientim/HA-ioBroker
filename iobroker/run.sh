@@ -1,11 +1,10 @@
-#!/usr/bin/env bash
-set -e
+IOBROKER_DIR="/addons_config/iobroker"
 
-# Stelle sicher, dass die ioBroker-Daten vorhanden sind
-if [ ! -d "/opt/iobroker" ]; then
-  echo "Erstelle ioBroker-Verzeichnis..."
-  mkdir -p /opt/iobroker
+# Stelle sicher, dass das ioBroker-Verzeichnis existiert
+if [ ! -d "$IOBROKER_DIR" ]; then
+  echo "Erstelle ioBroker-Konfigurationsverzeichnis..."
+  mkdir -p "$IOBROKER_DIR"
 fi
 
 # Starte ioBroker
-exec node node_modules/iobroker.js-controller/controller.js
+exec node node_modules/iobroker.js-controller/controller.js --config "$IOBROKER_DIR"
