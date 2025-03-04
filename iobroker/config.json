@@ -2,7 +2,7 @@
   "name": "AT-ioBroker",
   "version": "v10.0.0",
   "slug": "at-iobroker",
-  "description": "ioBroker AddOn for Home Assistant",
+  "description": "Run ioBroker as an AddOn inside Home Assistant",
   "arch": ["amd64"],
   "startup": "application",
   "boot": "auto",
