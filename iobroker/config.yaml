@@ -12,15 +12,11 @@ boot: "auto"
 hassio_api: true
 hassio_role: "admin"
 host_network: false
-options:
-  mqtt_port: 1883
-schema:
-  mqtt_port: int
 map:
   - addon_configs:rw
 ports:
   8081/tcp: 8081
-  mqtt_port/tcp: 
+  mqtt_port/tcp: 1883
 ports_description:
   8081/tcp: "Web-UI von ioBroker"
   mqtt_port/tcp: "Optionaler MQTT-Port"
